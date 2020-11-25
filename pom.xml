@@ -14,18 +14,20 @@
     <artifactId>springboot-boilerplate-security</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 
-
     <properties>
         <java.version>11</java.version>
         <spring-cloud.version>Hoxton.SR3</spring-cloud.version>
         <commons-collections.version>4.3</commons-collections.version>
+
+        <common-util.version>0.0.3</common-util.version>
     </properties>
 
     <dependencies>
         <dependency>
             <groupId>com.sp.common.util</groupId>
             <artifactId>common-util</artifactId>
-            <version>0.0.3</version>
+            <version>${common-util.version}</version>
+            <scope>compile</scope>
         </dependency>
         <!-- excluding default logging framework in spring to support log4j2 -->
         <dependency>
